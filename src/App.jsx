@@ -25,7 +25,9 @@ function Header({ openMenu, setOpenMenu }) {
   </>
 }
 
-function Hero() { return <section className="hero" id="top"><img className="hero-image" src={assets.heroImage} alt="Woman styling layered gold jewellery" /><div className="hero-shade" /><div className="hero-copy"><p className="eyebrow">EVERYDAY JEWELLERY, BUT MAKE IT AESTHETIC.</p><h1>Jewellery for<br /><em>your every mood.</em></h1><p className="hero-subtitle">Modern pieces designed to make every outfit feel a little more you.</p><div className="hero-actions"><a className="button button-primary" href="#coming-soon">Shop the collection <ArrowRight /></a></div></div></section> }
+function Hero() { return <section className="hero" id="top"><img className="hero-image" src={assets.heroImage} alt="Woman styling layered gold jewellery" /><div className="hero-shade" /><div className="hero-copy"><p className="eyebrow">EVERYDAY JEWELLERY, BUT MAKE IT AESTHETIC.</p><h1>Jewellery for<br /><em>your every mood.</em></h1><p className="hero-subtitle">Modern pieces designed to make every outfit feel a little more you.</p><div className="hero-actions">
+  {/* <a className="button button-primary" href="#coming-soon">Shop the collection <ArrowRight /></a> */}
+  </div></div></section> }
 
 function Benefits() { const items = [[Sparkles, '316L STAINLESS STEEL', 'Premium-grade, made to last'], [ShieldCheck, 'ANTI-TARNISH', 'Made for everyday wear'], [Sparkles, 'CZ DIAMONDS', 'Brilliant crystal detailing'], [Truck, 'FREE DELIVERY', 'On orders ₹999+']]; return <section className="benefits">{items.map(([Icon, title, copy]) => <div key={title}><Icon /><strong>{title}</strong><span>{copy}</span></div>)}</section> }
 
